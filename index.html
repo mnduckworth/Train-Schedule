@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+    <script src="http://momentjs.com/downloads/moment.js"></script>
+</head>
+<body>
+	<div class="container">
+		
+		<div class="jumbotron text-center">
+			
+			<h1>Train Management</h1>
+
+			<p>A comprehensive directory of train times</p>
+
+		</div>
+
+
+		<div class="panel-primary">
+				
+			<div class="panel-heading"><strong>Current Trains</strong></div>
+
+
+			<div class="panel-body">	
+
+				<table class="table table-hover">
+						
+					<thead>
+						<tr>				
+							<td>Train Name</td>
+							<td>Destination</td>
+							<td>Frequency</td>
+							<td>Next Arrival</td>
+							<td>Minutes Away</td>
+						</tr>
+					</thead>
+
+				</table>
+
+			</div>	
+		</div>
+
+		<div class="panel-primary">
+				
+			<div class="panel-heading"><strong>Add Train</strong></div>
+
+		</div>
+
+		<div class="panel-body">
+
+			<div class="form-group">
+				<label for="train-name-input">Train Name</label>
+				<input class="form-control" id = "train-name-input" type="text">
+			</div>
+			<div class="form-group">
+				<label for="destination-input">Destination</label>
+				<input class="form-control" id = "destination-input" type="text">
+			</div>
+			<div class="form-group">
+				<label for="frequency-input">Frequency<em style="font-weight:normal">(min)</em></label>
+				<input class="form-control" id = "frequency-input" type="number">
+			</div>
+			<div class="form-group">
+				<label for="first-train-time-input">First Train Time<em style="font-weight: normal">(Military Time)</em></label>
+				<input class="form-control" id = "first-train-time-input" type="text" step=>
+			</div>
+			<button type="button" class="btn btn-primary">Submit</button>
+		</div>
+
+	</div>
+
+	  // Initialize Firebase
+	 
+	
+	<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+	<script src="assets/javascript/logic.js"></script>
+
+</body>
+</html>
